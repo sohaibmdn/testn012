@@ -1,0 +1,442 @@
+:root{
+    --primary:#FF577F;
+    --secondary:rgba(255, 255, 255, 0.91);
+    --bcg1:#2C3639;
+    --bcg2:#3F4E4F;
+    --bcg3:#18122B;
+    --bcg4:#212626;
+    --bcg5:#393053;
+    --bcg6:#443C68;
+    --bcg7:#635985;
+    --bcg8:#2C3333;
+    --padding:8%;
+}
+@media screen and (max-width:575px){
+    :root{
+        --padding:2.5rem ;
+    }
+    html{
+        font-size: 13px;
+    }
+h1{
+    font-size: 3rem;
+}
+h4{
+    font-size: 1rem;
+    word-spacing: 0.5rem;
+}
+li{
+    margin: 0 1rem ;
+}
+p{
+    font-size: 1rem;
+    word-spacing: 0.100rem;
+
+}
+.home{
+    height: 65vh;
+}
+.home .btn,
+.home .pics{
+    display: none;
+}
+.home nav{
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#212626;
+    width: 100%;
+    height: 53px;
+}
+.home nav ul{
+    position: fixed;
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    background-color:#212626;
+    top: 0;
+    left: 0;
+}
+.home nav ul.this_is_active{
+    display: block;
+}
+
+.home nav ul li{
+    margin:  50px ;
+}
+.home ul li{
+    display: block;
+    margin: 0  18px ;
+    text-align: center;
+}
+
+
+.home main{
+    display: flex;
+ }
+.description{
+    margin-top: 6.25vh;
+    padding-top: 35px;
+}
+ .description h1{
+    margin: 0.5rem 0;
+}
+.description ul{
+    margin-top: 90px;
+}
+.home h1{
+    font-size: 5rem;
+}
+ .home h1 span{
+    display: block;
+ }
+ 
+ #menu{
+    display: inline-block;
+ }
+ #menu.this_is_active{
+    transform: rotate(810deg) scale(1.75);
+ }
+ /* ----------------about---------------- */
+ .about{
+    height: 35vh;
+ }
+.about .pic{
+    display: none;
+}
+
+.about .description_about{
+    width: 99%;
+}
+ /* ----------------services---------------- */
+ .services{
+    height: 100vh;
+ }
+ .services .box{
+    flex-direction: column;
+    row-gap: 5vh;
+    margin-top: 7vh;
+ }
+ /* ----------------skills---------------- */
+.skills{
+   height: 65vh ;
+   text-align: center;
+}
+ .skill_storyyet{
+    display: none;
+ }
+ .skill_img{
+    width: 100%;
+}
+.skill_img img{
+    width: 100px;
+    height: 100px;
+    margin: 50px 25px;
+}
+.footer{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    padding-top: 10vh;
+    height: 40vh;
+}
+.end p{
+    margin-top: 25px;
+    color: #FF577F;
+    font-size: 0.95rem;
+}
+}
+@media (min-width:576px) and (max-width:947px){
+  
+    :root{
+        --padding:2.5rem ;
+    }
+    html{
+        font-size: 13px;
+    }
+h1{
+    font-size: 3rem;
+}
+h4{
+    font-size: 1rem;
+    word-spacing: 0.5rem;
+}
+li{
+    margin: 0 1rem ;
+}
+p{
+    font-size: 1rem;
+    word-spacing: 0.100rem;
+
+}
+.home main{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+ .social_media img{
+    margin-top: 00px;
+}
+.home .btn,
+.home .pics{
+    display: none;
+}
+.home nav{
+    z-index: 100;
+    position: fixed;
+    background-color:#212626;
+    width: 100%;
+  
+
+    height: 53px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);}
+.home nav ul{
+    position: fixed;
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    background-color:#212626;
+    top: 0;
+    left: 0;
+}
+.home nav ul.this_is_active{
+    display: block;
+}
+
+.home nav ul li{
+    margin:  50px ;
+}
+.home ul li{
+    display: block;
+    margin: 0  18px ;
+    text-align: center;
+}
+
+
+.home main{
+    display: flex;
+ }
+.description{
+    margin-top: 6.25vh;
+    padding-top: 35px;
+}
+ .description h1{
+    margin: 0.5rem 0;
+}
+.description ul{
+    margin-top: 90px;
+}
+.home h1{
+    font-size: 5rem;
+}
+ .home h1 span{
+    display: block;
+ }
+ 
+ #menu{
+    display: inline-block;
+ }
+ #menu.this_is_active{
+    transform: rotate(90deg) scale(1.37);
+ }
+ /* ----------------about---------------- */
+ .about{
+    text-align: center;
+    height: 55vh;
+ }
+.about .pic{
+    display: none;
+}
+.about .description_about{
+    width: 99%;
+}
+ /* ----------------services---------------- */
+ .services{
+    height: 150vh;
+ }
+ .services .box{
+    flex-direction: column;
+    row-gap: 5vh;
+    margin-top: 7vh;
+ }
+ /* ----------------skills---------------- */
+.skills{
+   height: 65vh ;
+   text-align: center;
+}
+ .skill_storyyet{
+    display: none;
+ }
+ .skill_img{
+    width: 100%;
+}
+.skill_img img{
+    width: 100px;
+    height: 100px;
+    margin: 50px 25px;
+}
+.footer{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    padding-top: 10vh;
+    height: 40vh;
+}
+.end p{
+    margin-top: 25px;
+    color: #FF577F;
+    font-size: 0.95rem;
+}
+  
+}
+@media (min-width:948px) and (max-width:1284px){
+
+  
+    :root{
+        --padding:2.5rem ;
+    }
+    html{
+        font-size: 13px;
+    }
+h1{
+    font-size: 3rem;
+}
+h4{
+    font-size: 1rem;
+    word-spacing: 0.5rem;
+}
+li{
+    margin: 0 1rem ;
+}
+p{
+    font-size: 1rem;
+    word-spacing: 0.100rem;
+
+}
+.home main{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+ .social_media img{
+    margin-top: 00px;
+}
+.home .btn{
+    display: none;
+}
+.home nav{
+    z-index: 1000;
+    position: fixed;
+    
+    background-color:#212626;
+    width: 100%;
+    height: 53px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);}
+.home nav ul{
+    position:absolute;
+    display: none;
+    height: 100vh;
+    width: 25vw;
+    background-color:#212626;
+    top: 0;
+    right: 0;
+
+}
+.home nav ul.this_is_active{
+    display: block;
+}
+
+.home nav ul li{
+    margin:  50px ;
+}
+.home ul li{
+    display: block;
+    margin: 0  18px ;
+    text-align: center;
+}
+
+
+.home main{
+    display: flex;
+ }
+.description{
+    margin-top: 6.25vh;
+    padding-top: 35px;
+}
+ .description h1{
+    margin: 0.5rem 0;
+}
+.description ul{
+    margin-top: 90px;
+}
+.home h1{
+    font-size: 5rem;
+}
+ .home h1 span{
+    display: block;
+ }
+ .pics img{
+    width: 250px;
+    height: 375px;
+}
+ #menu{
+    display: inline-block;
+ }
+ #menu.this_is_active{
+    transform: rotate(90deg) scale(1.37);
+ }
+ /* ----------------about---------------- */
+ .about{
+    text-align: center;
+    height: 55vh;
+ }
+.about .pic {
+    width: 50%;
+}
+.about .description_about{
+    width: 99%;
+}
+ /* ----------------services---------------- */
+ .services{
+    height: 150vh;
+ }
+ .services .box{
+    flex-direction: column;
+    row-gap: 5vh;
+    margin-top: 7vh;
+ }
+ /* ----------------skills---------------- */
+.skills{
+   height: 65vh ;
+   text-align: center;
+}
+ .skill_storyyet{
+    display: none;
+ }
+ .skill_img{
+    width: 100%;
+}
+.skill_img img{
+    width: 100px;
+    height: 100px;
+    margin: 50px 25px;
+}
+.footer{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    padding-top: 10vh;
+    height: 40vh;
+}
+.end p{
+    margin-top: 25px;
+    color: #FF577F;
+    font-size: 0.95rem;
+}
+  
+
+}

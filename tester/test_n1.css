@@ -1,0 +1,337 @@
+:root[data-theme="dark"]{
+    --primary:#FF577F;
+    --secondary:rgba(255, 255, 255, 0.91);
+    --bcg1:#2C3639;
+    --bcg2:#3F4E4F;
+    --bcg3:#18122B;
+    --bcg4:#212626;
+    --bcg5:#15131a;
+    --bcg6:#443C68;
+    --bcg7:#635985;
+    --bcg8:#2C3333;
+    --padding:8%;
+    --mode-bg:#BFCCB5;
+    --moon-mode-bg:transparent;
+    --sun-mode-bg:#FEC868;
+}
+:root[data-theme="light"]{
+    --primary:#FF577F;
+    --secondary:black;
+    --bcg1:white;
+    --bcg2:white;
+    --bcg3:white;
+    --bcg4:white;
+    --bcg5:white;
+    --bcg6:white;
+    --bcg7:white;
+    --bcg8:white;
+    --padding:8%;
+    --mode-bg:#635985;
+    --moon-mode-bg:#FEC868;
+    --sun-mode-bg:transparent;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--secondary);
+}
+html{
+    font-size: 16px;
+}
+ h1{
+     font-size: 4rem;
+     text-transform: capitalize;
+ }
+ h4{
+     font-size: 1.5rem;
+     word-spacing: 0.85rem;
+ }
+ p{
+     font-size: 1.2rem;
+     word-spacing: 0.125rem;
+ 
+ }
+nav{
+    display: flex;
+    justify-content:space-between;
+    padding: 1.8rem 3.8rem;
+}
+nav h2{
+    letter-spacing: 0.25rem;
+}
+ul{
+    display: flex;
+    text-transform: capitalize;
+    transition: 2.5s;
+
+}
+li{
+    margin:0 2rem;
+    cursor: pointer;
+    list-style: none;
+}
+li:hover{
+    transform: scale(1.1);
+}
+li a{
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+li a:hover{
+    color:var(--primary);
+   
+}
+span{
+    color: var(--primary);
+}
+.btn{
+    height: 35px;
+    width: 140px;
+    background-color:var(--primary);
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color:transparent;
+    border: 1px solid var(--primary);
+}
+
+/* <<<< <<<< <<<< <<<<< <<<<< HOME SECTION >>>> >>>> >>>> >>>> >>>> >>>> */
+
+
+.home  {
+    background-color:var(--bcg1);
+    height: 100vh;
+}
+.home main{
+    display: flex;
+    padding: 0 3.8rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+ }
+.description .btn{
+    margin-top: 50px;
+}
+.description h1{
+    margin: 1.1rem 0;
+}
+
+.pics img{
+    width: 350px;
+    height: 525px;
+}
+.pics{
+    position: relative;
+    top: 15vh;
+}
+.pics:hover .shape{
+    transform:translateY(-70px)
+}
+.pics:hover .me{
+    transform:translateX(60px);
+}
+.shape{
+    position: relative;
+    left: 150px;
+    top: -13vh;
+    cursor:pointer;
+   transition: 1s ease;
+}
+.me{
+   position: relative;
+   right: 150px; 
+   top: -10vh;
+   cursor:pointer;
+   transition: 0.5s ease-out;
+}
+.social_media img{
+    height: 50px;
+    width: 50px;
+    transition:0.3s;
+    margin-top: 70px;
+}
+.social_media img:hover{
+    transform: scale(1.185);
+ }
+
+/* <<<< <<<< <<<< <<<<< <<<<< ABOUT SECTION >>>> >>>> >>>> >>>> >>>> >>>> */
+#menu {
+    display: none;
+    padding: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    background-color:transparent;
+    transition: 0.3s;
+}
+#menu i{
+    color: var(--secondary);
+    width: 30px;
+}
+/* <<<< <<<< <<<< <<<<< <<<<< ABOUT SECTION >>>> >>>> >>>> >>>> >>>> >>>> */
+.about  {
+    background-color:var(--bcg2);
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  var(--padding); 
+} 
+.about img{
+    height: 450px;
+    width: 450px;
+}
+.about .description_about{
+    width: 50%;
+}
+.about p {
+    margin-top: 10px;
+}
+
+
+/* <<<< <<<< <<<< <<<<< <<<<< SERVICES SECTION >>>> >>>> >>>> >>>> >>>> >>>> */
+
+
+.services{
+    background-color:var(--bcg2);
+    height: 90vh;
+    padding: 1.5rem var(--padding);
+    display: flex;
+    flex-direction: column;
+}
+.text_center{
+    text-align: center;
+}
+.services .box{
+    display: flex;
+    column-gap: 2rem;
+    margin-top: 17vh;
+   
+}
+.services .box .card{
+    background-color:var(--bcg4);
+    padding: 1rem 1.5rem;
+    border-radius: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+.services p{
+   font-size: 1rem; 
+}
+.services i{
+   font-size: 2.5rem; 
+   color:#FF577F;
+}
+.skill_storyyet{
+    height: 350px;
+    width: 350px;
+}
+
+/* <<<< <<<< <<<< <<<<< <<<<< SKILLS SECTION >>>> >>>> >>>> >>>> >>>> >>>> */
+
+.skills{
+    display: flex;
+    background:var(--bcg5);
+    padding: var(--padding);
+    justify-content: space-between;
+}
+.skills h1{
+    margin-bottom: 15px;
+}
+.skill_img{
+    width: 70%;
+}
+.skill_img img{
+    width: 120px;
+    height: 120px;
+    margin: 100px 25px;
+}
+
+/* <<<< <<<< <<<< <<<<< <<<<< FOOTER SECTION >>>> >>>> >>>> >>>> >>>> >>>> */
+
+footer{
+    background-color:var(--bcg7);
+   
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40vh;
+}
+.end p{
+    margin-top: 25px;
+    color: var(--primary);
+    font-size: 0.95rem;
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* .light_mode{
+    background-color: white !important;
+    color: black !important;
+} */
+
+/* #sun_moon{
+    background-color: transparent;
+    border: 00.5px solid black;
+    border-radius: 8px;
+    
+} */
+#sun_moon{
+    background-color:black ;
+}
+#sun_moon span{
+    color: black;
+    font-size: 25px;
+    z-index: 10;
+   }
+   .icon-brightness-contrast{
+    position: relative;
+   }
+   .icon-brightness-contrast::after{
+      content: "";
+      background-color:var(--sun-mode-bg);
+      height: 31px;
+      width: 31px;
+      border-radius: 50%;
+      position: absolute;
+      right: 8px;
+      top: 2px;
+      z-index: -1;
+      transition: 1s;
+   }
+   .icon-moon-o{
+      position: relative;
+       z-index: 10;
+   }
+   .icon-moon-o::after{
+      content: "";
+      background-color:var(--moon-mode-bg);
+      height: 31px;
+      width: 31px;
+      border-radius: 50%;
+      position: absolute;
+      right: -6px;
+      top: -3px;
+      z-index: -1;
+      transition: 1s;
+   
+   }
